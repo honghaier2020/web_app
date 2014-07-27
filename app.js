@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public/HelloHTML5World')));
-
+app.use(express.static(path.join(__dirname, 'sample')));
+app.use(express.static(path.join(__dirname, 'sample/HelloHTML5World')));
 app.use('/', routes);
 app.use('/users', users);
 
